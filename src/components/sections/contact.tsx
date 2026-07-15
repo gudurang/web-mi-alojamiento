@@ -40,7 +40,7 @@ export function Contact() {
     "w-full rounded-xl border border-piedra bg-crema/40 px-4 py-3 text-tinta outline-none transition focus:border-terracota focus:ring-2 focus:ring-terracota/30";
 
   return (
-    <section id="contacto" className="scroll-mt-20 bg-crema-light py-20 md:py-28">
+    <section id="contacto" className="scroll-mt-20 bg-crema-light py-14 md:py-20">
       <div className="container-x">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Info */}

@@ -29,7 +29,7 @@ export function About() {
   const t = useTranslations("about");
 
   return (
-    <section id="la-casa" className="scroll-mt-20 bg-crema py-20 md:py-28">
+    <section id="la-casa" className="scroll-mt-20 bg-crema py-14 md:py-20">
       <div className="container-x">
         {/* Intro: texto + imagen */}
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">

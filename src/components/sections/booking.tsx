@@ -53,7 +53,7 @@ export function Booking() {
   }
 
   return (
-    <section id="reservas" className="scroll-mt-20 bg-crema py-20 md:py-28">
+    <section id="reservas" className="scroll-mt-20 bg-crema py-14 md:py-20">
       <div className="container-x">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">

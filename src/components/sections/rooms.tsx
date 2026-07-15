@@ -20,7 +20,7 @@ export function Rooms() {
   const casa = ROOMS.find((r) => r.whole)!;
 
   return (
-    <section id="habitaciones" className="scroll-mt-20 bg-crema-light py-20 md:py-28">
+    <section id="habitaciones" className="scroll-mt-20 bg-crema-light py-14 md:py-20">
       <div className="container-x">
         <Reveal>
           <div className="max-w-2xl">

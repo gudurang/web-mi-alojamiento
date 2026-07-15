@@ -21,7 +21,7 @@ export function Environment() {
   const t = useTranslations("environment");
 
   return (
-    <section id="entorno" className="scroll-mt-20 bg-crema-light py-20 md:py-28">
+    <section id="entorno" className="scroll-mt-20 bg-crema-light py-14 md:py-20">
       <div className="container-x">
         {/* Banner con imagen */}
         <Reveal>
