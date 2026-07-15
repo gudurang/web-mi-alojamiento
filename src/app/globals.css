@@ -11,7 +11,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    /* El offset del ancla lo dan las secciones con scroll-mt (= altura del navbar).
+       No añadir scroll-padding aquí para no duplicar el desplazamiento. */
   }
   body {
     @apply bg-crema text-tinta font-sans antialiased;
