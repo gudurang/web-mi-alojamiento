@@ -4,6 +4,9 @@ import { Link } from "@/i18n/routing";
 import { sql } from "@/lib/db";
 import { formatEuro, type RoomKey } from "@/lib/pricing";
 
+// Se renderiza en cada visita para leer la reserva por su id (?b=...).
+export const dynamic = "force-dynamic";
+
 const ROOM_NAMES: Record<string, string> = {
   serrana: "La Serrana",
   mirador: "El Mirador",
