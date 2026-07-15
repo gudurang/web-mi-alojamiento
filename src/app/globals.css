@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fuentes (cargadas vía <link> en el layout) */
+  --font-fraunces: "Fraunces";
+  --font-mulish: "Mulish";
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-crema text-tinta font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+  ::selection {
+    @apply bg-terracota/20 text-pizarra;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .kicker {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-terracota;
+  }
+  .section-title {
+    @apply mt-3 font-serif text-3xl font-semibold text-pizarra sm:text-4xl md:text-5xl;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-terracota focus-visible:ring-offset-2 focus-visible:ring-offset-crema;
+  }
+  .btn-primary {
+    @apply btn bg-terracota text-crema shadow-md hover:bg-terracota-dark hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply btn border border-pizarra/20 bg-transparent text-pizarra hover:border-terracota hover:text-terracota;
+  }
+  .btn-light {
+    @apply btn bg-crema/95 text-pizarra shadow-md hover:bg-white;
+  }
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #efe7d6;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfc4b0;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5714e;
+}
+
+/* Efecto Ken Burns para el hero */
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-1%, -1%);
+  }
+}
+.animate-kenburns {
+  animation: kenburns 22s ease-out forwards;
+}

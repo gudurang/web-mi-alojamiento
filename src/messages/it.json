@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "title": "El Rincón de Gredos · Casa rurale a Navaluenga, Ávila",
+    "description": "Un rifugio di pietra nella Sierra de Gredos. Casa rurale di charme a Navaluenga (Ávila): camere con vista, camino e vasca idromassaggio. Prenotazione diretta, senza commissioni."
+  },
+  "nav": {
+    "home": "Home",
+    "house": "La casa",
+    "rooms": "Camere",
+    "booking": "Prenotazioni",
+    "environment": "Il territorio",
+    "gallery": "Galleria",
+    "contact": "Contatti",
+    "book": "Prenota"
+  },
+  "hero": {
+    "kicker": "Navaluenga · Ávila · Sierra de Gredos",
+    "title": "El Rincón de Gredos",
+    "subtitle": "Un rifugio di pietra dove il tempo scorre più lento.",
+    "cta": "Prenota il tuo soggiorno",
+    "cta2": "Scopri le camere",
+    "scroll": "Scopri la casa"
+  },
+  "about": {
+    "kicker": "La casa",
+    "title": "La tua casa in montagna",
+    "p1": "El Rincón de Gredos è un'antica casa di pietra ristrutturata con cura, nel cuore della Sierra de Gredos. Muri secolari, travi di legno e pavimenti in cotto convivono con il comfort di oggi, così che tu debba pensare solo a riposare.",
+    "p2": "Puoi affittare l'intera casa per il tuo gruppo o la tua famiglia, oppure prenotare una delle nostre tre camere. In entrambi i casi ti aspettano silenzio, natura e il profumo della lavanda del giardino.",
+    "hostName": "Laura",
+    "hostRole": "La tua padrona di casa",
+    "hostQuote": "Qui ti svegli con la montagna alla finestra e il caffè senza fretta. Adoro accogliere chi cerca di staccare davvero.",
+    "servicesTitle": "Tutto ciò di cui hai bisogno",
+    "servicesSubtitle": "Piccoli dettagli pensati per farti sentire come a casa.",
+    "services": {
+      "breakfast": "Colazione fatta in casa inclusa",
+      "wifi": "WiFi in tutta la casa",
+      "parking": "Parcheggio gratuito",
+      "heating": "Riscaldamento e camino",
+      "garden": "Giardino e zona esterna",
+      "pets": "Animali ammessi",
+      "kitchen": "Cucina a tua disposizione",
+      "bbq": "Barbecue",
+      "ac": "Aria condizionata",
+      "iron": "Ferro da stiro",
+      "hairdryer": "Asciugacapelli",
+      "linen": "Asciugamani e biancheria da letto inclusi",
+      "bikes": "Biciclette a noleggio"
+    }
+  },
+  "rooms": {
+    "kicker": "Camere",
+    "title": "Tre angoli con un'anima",
+    "subtitle": "Ogni camera ha il suo carattere. Scegli la tua o prenditi l'intera casa.",
+    "perNight": "/ notte",
+    "weekday": "Infrasettimanale",
+    "weekend": "Fine settimana",
+    "from": "Da",
+    "capacity": "Fino a {count} persone",
+    "bookRoom": "Prenota questa camera",
+    "wholeHouseBadge": "Casa intera",
+    "items": {
+      "serrana": {
+        "name": "La Serrana",
+        "tagline": "Pietra, luce e colore",
+        "description": "Due letti e una parete in pietra originale vestita con coperte artigianali colorate. Luminosa e accogliente, perfetta per due viaggiatori o buoni amici."
+      },
+      "mirador": {
+        "name": "El Mirador",
+        "tagline": "La montagna alla tua finestra",
+        "description": "Letto matrimoniale e un balcone privato con vista diretta sulle cime di Gredos. Pavimento in cotto, legno caldo e la più bella alba che ricorderai."
+      },
+      "alcoba": {
+        "name": "La Alcoba del Fuego",
+        "tagline": "Per una fuga speciale",
+        "description": "La nostra suite più romantica: camino, vasca idromassaggio e muri di pietra al lume di candela. Ideale per anniversari e momenti che meritano di essere festeggiati."
+      },
+      "casa": {
+        "name": "La casa intera",
+        "tagline": "Tutto per il tuo gruppo",
+        "description": "Le tre camere più il salone con camino, la cucina, il giardino e il barbecue. Fino a sei persone con tutta la casa a vostra disposizione."
+      }
+    }
+  },
+  "booking": {
+    "kicker": "Prenotazioni",
+    "title": "Calcola il tuo soggiorno",
+    "subtitle": "Scegli camera e date e vedrai il prezzo all'istante. Senza sorprese.",
+    "room": "Alloggio",
+    "checkIn": "Arrivo",
+    "checkOut": "Partenza",
+    "guests": "Ospiti",
+    "selectRoom": "Scegli l'alloggio",
+    "nights": "{count, plural, one {# notte} other {# notti}}",
+    "subtotal": "Subtotale",
+    "discountWeek": "Sconto settimana (-10%)",
+    "discountMonth": "Sconto mese (-30%)",
+    "total": "Totale stimato",
+    "invalidDates": "Scegli una data di partenza successiva a quella di arrivo.",
+    "empty": "Seleziona alloggio e date per vedere il prezzo.",
+    "cta": "Richiedi questa prenotazione",
+    "note": "Il pagamento online con carta sarà disponibile molto presto. Per ora, conferma la tua prenotazione via WhatsApp o email e ti rispondiamo subito.",
+    "weekdayNights": "{count, plural, one {# notte infrasettimanale} other {# notti infrasettimanali}}",
+    "weekendNights": "{count, plural, one {# notte nel fine settimana} other {# notti nel fine settimana}}"
+  },
+  "environment": {
+    "kicker": "Il territorio",
+    "title": "Gredos, davanti alla tua porta",
+    "subtitle": "Natura allo stato puro. Ecco cosa ti aspetta appena esci di casa.",
+    "items": {
+      "hiking": {
+        "title": "Sentieri di trekking",
+        "desc": "Sentieri per tutti i livelli, dalle passeggiate tranquille alla salita al Circo di Gredos e alla Laguna Grande."
+      },
+      "pools": {
+        "title": "Gole e piscine naturali",
+        "desc": "Acque cristalline di montagna per un bagno indimenticabile d'estate, a pochi minuti dalla casa."
+      },
+      "villages": {
+        "title": "Borghi pieni di fascino",
+        "desc": "Navaluenga e i borghi della valle dell'Alberche: pietra, piazze tranquille e tanta storia."
+      },
+      "food": {
+        "title": "Gastronomia della sierra",
+        "desc": "Carni locali, fagioli del Barco, formaggi e dolci fatti in casa. Sapori autentici."
+      },
+      "bikes": {
+        "title": "Percorsi in bicicletta",
+        "desc": "Noleggiamo biciclette perché tu possa scoprire la valle su due ruote al tuo ritmo."
+      },
+      "stars": {
+        "title": "Cieli stellati",
+        "desc": "Lontano dalla città, le notti di Gredos regalano un firmamento che non dimenticherai."
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "Galleria",
+    "title": "Uno sguardo a El Rincón",
+    "subtitle": "La casa, le camere e il paesaggio che le circonda."
+  },
+  "contact": {
+    "kicker": "Contatti",
+    "title": "Ne parliamo?",
+    "subtitle": "Scrivici per verificare la disponibilità o per qualsiasi dubbio. Ti rispondiamo con grande piacere.",
+    "whatsapp": "Scrivici su WhatsApp",
+    "emailLabel": "Email",
+    "phoneLabel": "WhatsApp",
+    "locationLabel": "Dove siamo",
+    "locationValue": "Navaluenga, Ávila (Sierra de Gredos)",
+    "form": {
+      "name": "Il tuo nome",
+      "email": "La tua email",
+      "dates": "Date (indicative)",
+      "guests": "N° di persone",
+      "message": "Raccontaci di cosa hai bisogno",
+      "send": "Invia messaggio",
+      "sending": "Invio in corso…",
+      "success": "Grazie! Apriremo la tua email per inviare il messaggio.",
+      "required": "Per favore, compila i campi obbligatori."
+    },
+    "botTeaser": "Molto presto: un assistente che risponde ai tuoi dubbi in tempo reale, 24 ore su 24."
+  },
+  "footer": {
+    "tagline": "Un rifugio di pietra nella Sierra de Gredos.",
+    "explore": "Esplora",
+    "contact": "Contatti",
+    "rights": "Tutti i diritti riservati.",
+    "madeWith": "Fatto con affetto a Gredos."
+  },
+  "language": {
+    "label": "Lingua",
+    "es": "Español",
+    "en": "English",
+    "it": "Italiano",
+    "pt": "Português",
+    "fr": "Français"
+  }
+}
