@@ -37,7 +37,11 @@ export default async function ReservaConfirmada({
   const id = searchParams?.b;
   if (id && sql) {
     try {
-      const rows = (await sql`SELECT * FROM bookings WHERE id = ${id} LIMIT 1`) as BookingRow[];
+      const rows = (await sql`
+        SELECT id, room, check_in::text AS check_in, check_out::text AS check_out,
+               nights, total_cents
+        FROM bookings WHERE id = ${id} LIMIT 1
+      `) as BookingRow[];
       booking = rows[0] ?? null;
     } catch {
       booking = null;
@@ -64,17 +68,17 @@ export default async function ReservaConfirmada({
             <div className="flex justify-between">
               <span className="text-tinta/60">{t("dates")}</span>
               <span className="font-medium text-pizarra">
-                {booking.check_in} → {booking.check_out}
+                {String(booking.check_in).slice(0, 10)} → {String(booking.check_out).slice(0, 10)}
               </span>
             </div>
             <div className="flex justify-between border-t border-piedra/60 pt-2">
               <span className="text-tinta/60">{t("total")}</span>
               <span className="font-semibold text-terracota-dark">
-                {formatEuro(booking.total_cents / 100)}
+                {formatEuro(Number(booking.total_cents) / 100)}
               </span>
             </div>
             <div className="pt-1 text-center text-xs text-tinta/40">
-              {t("ref")}: {booking.id.slice(0, 8).toUpperCase()}
+              {t("ref")}: {String(booking.id).slice(0, 8).toUpperCase()}
             </div>
           </div>
         )}

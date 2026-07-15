@@ -19,18 +19,18 @@ export async function getBookedRanges(room: RoomKey): Promise<DateRangeStr[]> {
   const rows =
     room === "casa"
       ? ((await sql`
-          SELECT check_in, check_out FROM bookings
+          SELECT check_in::text AS check_in, check_out::text AS check_out FROM bookings
           WHERE (status = 'paid' OR (status = 'pending' AND created_at > now() - interval '30 minutes'))
             AND check_out > CURRENT_DATE
         `) as { check_in: string; check_out: string }[])
       : ((await sql`
-          SELECT check_in, check_out FROM bookings
+          SELECT check_in::text AS check_in, check_out::text AS check_out FROM bookings
           WHERE (room = ${room} OR room = 'casa')
             AND (status = 'paid' OR (status = 'pending' AND created_at > now() - interval '30 minutes'))
             AND check_out > CURRENT_DATE
         `) as { check_in: string; check_out: string }[]);
 
-  return rows.map((r) => ({ from: String(r.check_in), to: String(r.check_out) }));
+  return rows.map((r) => ({ from: String(r.check_in).slice(0, 10), to: String(r.check_out).slice(0, 10) }));
 }
 
 // ¿Está libre el rango [checkIn, checkOut) para `room`?
