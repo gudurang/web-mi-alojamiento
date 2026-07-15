@@ -1,0 +1,13 @@
+Sube aquí las 9 imágenes de El Rincón de Gredos:
+
+1. anfitriona.jpg          -> Retrato de la anfitriona
+2. cartel-casa.jpg         -> Cartel "El Rincón de Gredos" con la casa
+3. habitacion-vistas.jpg   -> Habitación con balcón y vistas a la montaña
+4. suite-jacuzzi.jpg       -> Suite romántica con jacuzzi y chimenea
+5. habitacion-doble.jpg    -> Habitación doble (mantas de colores)
+6. fachada.jpg             -> Fachada de piedra con contraventanas verdes
+7. logo.png                -> Logo redondo (borde azul marino)
+8. logo-blanco.png         -> Logo redondo (fondo blanco)
+9. panoramica.jpg          -> Panorámica del valle de Gredos al amanecer
+
+(Los nombres son orientativos; súbelas como quieras y ya las organizo yo.)
