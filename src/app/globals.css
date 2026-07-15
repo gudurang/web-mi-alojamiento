@@ -65,15 +65,33 @@
   background: #b5714e;
 }
 
-/* Calendario (react-day-picker) con colores de marca */
+/* Calendario (react-day-picker) con colores de marca — compacto y horizontal */
 .rdp-brand {
   --rdp-accent-color: #b5714e;
   --rdp-accent-background-color: #f0e4d6;
-  --rdp-today-color: #3e5a3f;
-  --rdp-day-width: 2.4rem;
-  --rdp-day-height: 2.4rem;
+  --rdp-range_middle-background-color: #f0e4d6;
+  --rdp-range_middle-color: #2b2721;
+  --rdp-today-color: #b5714e;
+  --rdp-day-width: 2.15rem;
+  --rdp-day-height: 2.15rem;
   --rdp-font-family: inherit;
+  font-size: 0.875rem;
   color: #2b2721;
+}
+.rdp-brand .rdp-months {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+.rdp-brand .rdp-month_caption {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 0.95rem;
+}
+.rdp-brand .rdp-weekday {
+  color: #9a927f;
+  font-weight: 600;
 }
 .rdp-brand .rdp-day_button:hover {
   background-color: #f0e4d6;
@@ -85,10 +103,14 @@
   color: #f5efe3;
   border: none;
 }
+.rdp-brand .rdp-today:not(.rdp-selected):not(.rdp-disabled) .rdp-day_button {
+  color: #b5714e;
+  font-weight: 700;
+}
 .rdp-brand .rdp-disabled {
   color: #cfc4b0;
   text-decoration: line-through;
-  opacity: 0.7;
+  opacity: 0.65;
 }
 .rdp-brand .rdp-chevron {
   fill: #3e5a3f;
