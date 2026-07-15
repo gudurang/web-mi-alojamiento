@@ -26,6 +26,7 @@ export function Booking() {
   const [range, setRange] = useState<DateRange | undefined>();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [booked, setBooked] = useState<{ from: string; to: string }[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -89,7 +90,7 @@ export function Booking() {
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ room, checkIn, checkOut, name, email }),
+        body: JSON.stringify({ room, checkIn, checkOut, name, email, phone }),
       });
       if (res.ok) {
         const data = await res.json();
@@ -137,9 +138,30 @@ export function Booking() {
 
         <Reveal>
           <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-piedra/60">
-            {/* Cuerpo: calendario a todo el ancho + campos en fila */}
+            {/* Cuerpo: alojamiento arriba, calendario, y datos abajo */}
             <div className="p-6 md:p-8">
-              <div className="flex flex-wrap items-center justify-between gap-2">
+              {/* Alojamiento (arriba del calendario) */}
+              <div className="max-w-sm">
+                <label className="block text-sm font-semibold text-pizarra">{t("room")}</label>
+                <select
+                  value={room}
+                  onChange={(e) => {
+                    setRoom(e.target.value as RoomKey);
+                    setRange(undefined);
+                  }}
+                  className={inputClass + " mt-2"}
+                >
+                  <option value="">{t("selectRoom")}</option>
+                  {ROOMS.map((r) => (
+                    <option key={r.key} value={r.key}>
+                      {tr(`items.${r.key}.name`)}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Fechas */}
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-2">
                 <p className="text-sm font-semibold text-pizarra">{t("selectDates")}</p>
                 <div className="flex items-center gap-2 text-xs text-tinta/55">
                   <span className="inline-block h-3 w-3 rounded-sm bg-piedra" />
@@ -159,25 +181,8 @@ export function Booking() {
                 />
               </div>
 
+              {/* Datos del huésped (abajo del calendario) */}
               <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                <div>
-                  <label className="block text-sm font-semibold text-pizarra">{t("room")}</label>
-                  <select
-                    value={room}
-                    onChange={(e) => {
-                      setRoom(e.target.value as RoomKey);
-                      setRange(undefined);
-                    }}
-                    className={inputClass + " mt-2"}
-                  >
-                    <option value="">{t("selectRoom")}</option>
-                    {ROOMS.map((r) => (
-                      <option key={r.key} value={r.key}>
-                        {tr(`items.${r.key}.name`)}
-                      </option>
-                    ))}
-                  </select>
-                </div>
                 <div>
                   <label className="block text-sm font-semibold text-pizarra">{t("yourName")}</label>
                   <input value={name} onChange={(e) => setName(e.target.value)} className={inputClass + " mt-2"} />
@@ -185,6 +190,10 @@ export function Booking() {
                 <div>
                   <label className="block text-sm font-semibold text-pizarra">{t("yourEmail")}</label>
                   <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass + " mt-2"} />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-pizarra">{t("yourPhone")}</label>
+                  <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} className={inputClass + " mt-2"} />
                 </div>
               </div>
             </div>

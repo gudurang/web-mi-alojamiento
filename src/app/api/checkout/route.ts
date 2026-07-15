@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
     checkOut?: string;
     name?: string;
     email?: string;
+    phone?: string;
   };
   try {
     body = await req.json();
@@ -37,7 +38,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "bad_request" }, { status: 400 });
   }
 
-  const { room, checkIn, checkOut, name, email } = body;
+  const { room, checkIn, checkOut, name, email, phone } = body;
   if (!room || !VALID.includes(room) || !checkIn || !checkOut) {
     return NextResponse.json({ error: "missing_fields" }, { status: 400 });
   }
@@ -63,9 +64,9 @@ export async function POST(req: NextRequest) {
     // Reserva provisional (pending) para bloquear las fechas mientras paga.
     await sql`
       INSERT INTO bookings
-        (id, room, check_in, check_out, guest_name, guest_email, nights, total_cents, status)
+        (id, room, check_in, check_out, guest_name, guest_email, guest_phone, nights, total_cents, status)
       VALUES
-        (${id}, ${room}, ${checkIn}, ${checkOut}, ${name || null}, ${email || null},
+        (${id}, ${room}, ${checkIn}, ${checkOut}, ${name || null}, ${email || null}, ${phone || null},
          ${quote.nights}, ${totalCents}, 'pending')
     `;
 
@@ -88,7 +89,7 @@ export async function POST(req: NextRequest) {
           },
         },
       ],
-      metadata: { bookingId: id, room, checkIn, checkOut },
+      metadata: { bookingId: id, room, checkIn, checkOut, phone: phone || "" },
       success_url: `${origin}/reserva/confirmada?b=${id}`,
       cancel_url: `${origin}/#reservas`,
     });

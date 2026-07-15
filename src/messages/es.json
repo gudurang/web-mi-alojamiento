@@ -113,7 +113,8 @@
     "checkoutError": "No se pudo iniciar el pago. Inténtalo de nuevo o escríbenos por WhatsApp.",
     "notConfigured": "El pago online se está activando. De momento, reserva por WhatsApp.",
     "legendUnavailable": "Fechas no disponibles",
-    "waHello": "Hola Laura, me gustaría reservar en El Rincón de Gredos:"
+    "waHello": "Hola Laura, me gustaría reservar en El Rincón de Gredos:",
+    "yourPhone": "Teléfono"
   },
   "confirmation": {
     "title": "¡Reserva confirmada!",

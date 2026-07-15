@@ -113,7 +113,8 @@
     "checkoutError": "Não foi possível iniciar o pagamento. Tenta novamente ou escreve-nos pelo WhatsApp.",
     "notConfigured": "O pagamento online está a ser ativado. Por agora, reserva pelo WhatsApp.",
     "legendUnavailable": "Datas não disponíveis",
-    "waHello": "Olá Laura, gostaria de reservar em El Rincón de Gredos:"
+    "waHello": "Olá Laura, gostaria de reservar em El Rincón de Gredos:",
+    "yourPhone": "Telefone"
   },
   "confirmation": {
     "title": "Reserva confirmada!",

@@ -113,7 +113,8 @@
     "checkoutError": "We couldn't start the payment. Please try again or message us on WhatsApp.",
     "notConfigured": "Online payment is being set up. For now, please book via WhatsApp.",
     "legendUnavailable": "Unavailable dates",
-    "waHello": "Hi Laura, I'd like to book at El Rincón de Gredos:"
+    "waHello": "Hi Laura, I'd like to book at El Rincón de Gredos:",
+    "yourPhone": "Phone"
   },
   "confirmation": {
     "title": "Booking confirmed!",

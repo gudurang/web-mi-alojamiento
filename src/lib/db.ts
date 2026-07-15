@@ -27,5 +27,7 @@ export async function ensureSchema(): Promise<void> {
       created_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
   `;
+  // Columna de teléfono (para tablas ya creadas antes de añadir el campo).
+  await sql`ALTER TABLE bookings ADD COLUMN IF NOT EXISTS guest_phone TEXT`;
   schemaReady = true;
 }
