@@ -6,10 +6,12 @@ import { Users, Moon, Sun, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { ROOMS } from "@/lib/data";
 import { formatEuro } from "@/lib/pricing";
+import { scrollToId } from "@/lib/scroll";
 
 function selectRoom(key: string) {
   window.dispatchEvent(new CustomEvent("select-room", { detail: key }));
-  document.getElementById("reservas")?.scrollIntoView({ behavior: "smooth" });
+  scrollToId("reservas", true);
+  window.setTimeout(() => scrollToId("reservas", false), 700);
 }
 
 export function Rooms() {
