@@ -1,0 +1,11 @@
+import { chromium } from "playwright-core";
+const OUT = process.env.SHOT_DIR || ".";
+const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium", args: ["--no-sandbox"] });
+const p = await b.newPage({ viewport: { width: 1440, height: 1000 }, locale: "es-ES", extraHTTPHeaders: { "Accept-Language": "es-ES,es;q=0.9" } });
+await p.goto("http://127.0.0.1:3000/", { waitUntil: "networkidle", timeout: 40000 });
+await p.evaluate(() => document.getElementById("reservas")?.scrollIntoView());
+await p.waitForTimeout(1500);
+const el = p.locator("#reservas").first();
+await el.screenshot({ path: `${OUT}/reservas-nuevo.png` });
+console.log("ok");
+await b.close();

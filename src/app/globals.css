@@ -65,6 +65,35 @@
   background: #b5714e;
 }
 
+/* Calendario (react-day-picker) con colores de marca */
+.rdp-brand {
+  --rdp-accent-color: #b5714e;
+  --rdp-accent-background-color: #f0e4d6;
+  --rdp-today-color: #3e5a3f;
+  --rdp-day-width: 2.4rem;
+  --rdp-day-height: 2.4rem;
+  --rdp-font-family: inherit;
+  color: #2b2721;
+}
+.rdp-brand .rdp-day_button:hover {
+  background-color: #f0e4d6;
+}
+.rdp-brand .rdp-selected .rdp-day_button,
+.rdp-brand .rdp-range_start .rdp-day_button,
+.rdp-brand .rdp-range_end .rdp-day_button {
+  background-color: #b5714e;
+  color: #f5efe3;
+  border: none;
+}
+.rdp-brand .rdp-disabled {
+  color: #cfc4b0;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.rdp-brand .rdp-chevron {
+  fill: #3e5a3f;
+}
+
 /* Efecto Ken Burns para el hero */
 @keyframes kenburns {
   0% {

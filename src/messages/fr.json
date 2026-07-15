@@ -100,7 +100,29 @@
     "cta": "Demander cette réservation",
     "note": "Le paiement en ligne par carte sera bientôt disponible. Pour le moment, confirmez votre réservation par WhatsApp ou par email et nous vous répondons aussitôt.",
     "weekdayNights": "{count, plural, one {# nuit en semaine} other {# nuits en semaine}}",
-    "weekendNights": "{count, plural, one {# nuit de week-end} other {# nuits de week-end}}"
+    "weekendNights": "{count, plural, one {# nuit de week-end} other {# nuits de week-end}}",
+    "selectDates": "Sélectionnez vos dates",
+    "yourName": "Votre nom",
+    "yourEmail": "Votre email",
+    "pay": "Payer et réserver",
+    "processing": "Redirection vers le paiement…",
+    "orWhatsapp": "Je préfère me renseigner par WhatsApp",
+    "securePayment": "Paiement sécurisé par carte via Stripe. Le montant total est débité.",
+    "unavailable": "Ces dates ne sont plus disponibles. Choisissez-en d'autres.",
+    "needInfo": "Indiquez votre nom et votre email pour continuer.",
+    "checkoutError": "Impossible de lancer le paiement. Réessayez ou écrivez-nous sur WhatsApp.",
+    "notConfigured": "Le paiement en ligne est en cours d'activation. Pour le moment, réservez par WhatsApp.",
+    "legendUnavailable": "Dates non disponibles",
+    "waHello": "Bonjour Laura, je souhaiterais réserver à El Rincón de Gredos :"
+  },
+  "confirmation": {
+    "title": "Réservation confirmée !",
+    "subtitle": "Merci d'avoir réservé à El Rincón de Gredos. Nous vous avons envoyé un email avec tous les détails. Nous vous attendons !",
+    "room": "Hébergement",
+    "dates": "Dates",
+    "total": "Total payé",
+    "ref": "Référence",
+    "back": "Retour à l'accueil"
   },
   "environment": {
     "kicker": "Les environs",
